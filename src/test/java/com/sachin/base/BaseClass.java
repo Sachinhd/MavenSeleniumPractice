@@ -53,6 +53,10 @@ public class BaseClass {
         driver.get(ConfigReader.getProperty("url"));
     }
 
+    public WebDriver getDriver() {
+        return driver;
+    }
+
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
 

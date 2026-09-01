@@ -1,11 +1,21 @@
 package com.sachin.utilities;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.sachin.base.BaseClass;
 
 public class TestListener implements ITestListener {
 
@@ -40,6 +50,43 @@ public class TestListener implements ITestListener {
 
         test.get().fail(result.getThrowable());
 
+        // Capture and attach screenshot on failure
+        try {
+
+            Object currentTestInstance = result.getInstance();
+            WebDriver driver = ((BaseClass) currentTestInstance).getDriver();
+
+            if (driver != null) {
+
+                String screenshotPath = captureScreenshot(
+                        driver, result.getMethod().getMethodName());
+
+                test.get().addScreenCaptureFromPath(screenshotPath);
+            }
+
+        } catch (Exception e) {
+            test.get().info("Screenshot could not be captured: " + e.getMessage());
+        }
+
+    }
+
+    private String captureScreenshot(WebDriver driver, String testName) throws IOException {
+
+        TakesScreenshot ts = (TakesScreenshot) driver;
+        File source = ts.getScreenshotAs(OutputType.FILE);
+
+        String screenshotDir =
+                System.getProperty("user.dir") + "/test-output/screenshots/";
+
+        Files.createDirectories(Paths.get(screenshotDir));
+
+        String destPath = screenshotDir + testName + "_" + System.currentTimeMillis() + ".png";
+
+        File destination = new File(destPath);
+
+        FileUtils.copyFile(source, destination);
+
+        return destPath;
     }
 
     @Override
