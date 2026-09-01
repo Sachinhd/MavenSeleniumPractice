@@ -16,7 +16,8 @@ public class BaseClass {
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
 
-        // Load configuration
+    	//git test
+    // Load configuration
         ConfigReader.loadProperties();
 
         // Read browser
