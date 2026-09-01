@@ -14,6 +14,8 @@ public class LoginPage {
 
     By loginError = By.cssSelector("h3[data-test='error']");
 
+ // GitHub Eclipse test
+
     // Constructor
     public LoginPage(WebDriver driver) {
         this.driver = driver;
