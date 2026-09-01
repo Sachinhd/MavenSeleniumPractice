@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Maven_Selenium_Practice_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Maven Selenium Practice Suite</span>
+              <span class="suite-name border-failed">Maven Selenium Practice Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Maven_Selenium_Practice_Suite" class="hide-methods failed suite-Maven_Selenium_Practice_Suite"> (hide)</a> <!-- hide-methods failed suite-Maven_Selenium_Practice_Suite -->
+                      <a href="#" panel-name="suite-Maven_Selenium_Practice_Suite" class="show-methods failed suite-Maven_Selenium_Practice_Suite"> (show)</a> <!-- show-methods failed suite-Maven_Selenium_Practice_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Maven_Selenium_Practice_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Maven_Selenium_Practice_Suite" title="com.sachin.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithMultipleData(standard_user, secret_sauce, Valid)">verifyLoginWithMultipleData(standard_user, secret_sauce, Valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Maven_Selenium_Practice_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +117,12 @@
                     <div class="method-list-content passed suite-Maven_Selenium_Practice_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Maven_Selenium_Practice_Suite" title="com.sachin.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithMultipleData(wrong_user, secret_sauce, Invalid)">verifyLoginWithMultipleData(wrong_user, secret_sauce, Invalid)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Maven_Selenium_Practice_Suite" title="com.sachin.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithMultipleData(standard_user, secret_sauce, Valid)">verifyLoginWithMultipleData(standard_user, secret_sauce, Valid)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Maven_Selenium_Practice_Suite" title="com.sachin.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithMultipleData(standard_user, wrong_password, Invalid)">verifyLoginWithMultipleData(standard_user, wrong_password, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Maven_Selenium_Practice_Suite" title="com.sachin.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithMultipleData(wrong_user, secret_sauce, Invalid)">verifyLoginWithMultipleData(wrong_user, secret_sauce, Invalid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -133,6 +142,27 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Maven_Selenium_Practice_Suite" class="panel Maven_Selenium_Practice_Suite">
+          <div class="suite-Maven_Selenium_Practice_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sachin.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithMultipleData(standard_user, secret_sauce, Valid)">
+                  </a> <!-- verifyLoginWithMultipleData(standard_user, secret_sauce, Valid) -->
+                  <span class="method-name">verifyLoginWithMultipleData</span>
+                  <span class="parameters">(standard_user,secret_sauce,Valid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Wrong Heading] but found [Products]
+	at com.sachin.tests.LoginTest.verifyLoginWithMultipleData(LoginTest.java:108)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Maven_Selenium_Practice_Suite-class-failed -->
           <div class="suite-Maven_Selenium_Practice_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -141,26 +171,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLoginWithMultipleData(wrong_user, secret_sauce, Invalid)">
-                  </a> <!-- verifyLoginWithMultipleData(wrong_user, secret_sauce, Invalid) -->
-                  <span class="method-name">verifyLoginWithMultipleData</span>
-                  <span class="parameters">(wrong_user,secret_sauce,Invalid)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginWithMultipleData(standard_user, secret_sauce, Valid)">
-                  </a> <!-- verifyLoginWithMultipleData(standard_user, secret_sauce, Valid) -->
-                  <span class="method-name">verifyLoginWithMultipleData</span>
-                  <span class="parameters">(standard_user,secret_sauce,Valid)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyLoginWithMultipleData(standard_user, wrong_password, Invalid)">
                   </a> <!-- verifyLoginWithMultipleData(standard_user, wrong_password, Invalid) -->
                   <span class="method-name">verifyLoginWithMultipleData</span>
                   <span class="parameters">(standard_user,wrong_password,Invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithMultipleData(wrong_user, secret_sauce, Invalid)">
+                  </a> <!-- verifyLoginWithMultipleData(wrong_user, secret_sauce, Invalid) -->
+                  <span class="method-name">verifyLoginWithMultipleData</span>
+                  <span class="parameters">(wrong_user,secret_sauce,Invalid)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -246,26 +268,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyLoginWithMultipleData')
+data.setCell(0, 1, 'verifyLogout')
 data.setCell(0, 2, 'com.sachin.tests.LoginTest')
-data.setCell(0, 3, 1733);
+data.setCell(0, 3, 3493);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLogout')
+data.setCell(1, 1, 'verifyLoginWithMultipleData')
 data.setCell(1, 2, 'com.sachin.tests.LoginTest')
-data.setCell(1, 3, 1711);
+data.setCell(1, 3, 1760);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyLoginWithMultipleData')
 data.setCell(2, 2, 'com.sachin.tests.LoginTest')
-data.setCell(2, 3, 1262);
+data.setCell(2, 3, 1458);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyLoginWithMultipleData')
 data.setCell(3, 2, 'com.sachin.tests.LoginTest')
-data.setCell(3, 3, 840);
+data.setCell(3, 3, 1368);
 window.suiteTableData['Maven_Selenium_Practice_Suite']= { tableData: data, tableDiv: 'times-div-Maven_Selenium_Practice_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Maven_Selenium_Practice_Suite">
               </div> <!-- times-div-Maven_Selenium_Practice_Suite -->
             </div> <!-- times-div -->
@@ -304,48 +326,50 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyLoginWithMultipleData(standard_user, secret_sauce, Valid)</span>
-                <span class="method-start">5445 ms</span>
+                <span class="method-start">27789 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6289 ms</span>
+                <span class="method-start">29796 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">6788 ms</span>
+                <span class="method-start">30320 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithMultipleData(standard_user, wrong_password, Invalid)</span>
-                <span class="method-start">9307 ms</span>
+                <span class="method-start">32375 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">10574 ms</span>
+                <span class="method-start">33748 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">10949 ms</span>
+                <span class="method-start">34234 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithMultipleData(wrong_user, secret_sauce, Invalid)</span>
-                <span class="method-start">14670 ms</span>
+                <span class="method-start">36419 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16404 ms</span>
+                <span class="method-start">37882 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">16794 ms</span>
+                <span class="method-start">38273 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLogout</span>
-                <span class="method-start">20241 ms</span>
+                <span class="method-start">40943 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21955 ms</span>
+                <span class="method-start">44437 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

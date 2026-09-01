@@ -4,6 +4,7 @@ com\sachin\base\BaseClass.class
 com\sachin\utilities\ExcelReader.class
 com\sachin\utilities\ConfigReader.class
 com\sachin\pages\LoginPage.class
+com\sachin\utilities\ScreenshotUtil.class
 com\sachin\pages\HomePage.class
 com\sachin\utilities\TestData.class
 com\sachin\utilities\ExtentReportManager.class
