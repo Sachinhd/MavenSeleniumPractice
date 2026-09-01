@@ -104,10 +104,10 @@ public class LoginTest extends BaseClass {
                     + " | Expected: Valid"
                     + " | Actual: Login Successful");
 
-         Assert.assertEquals( actualHeading, "Products");
+     //    Assert.assertEquals( actualHeading, "Products");
             
             //For Failed Test Case
-      //      Assert.assertEquals(actualHeading, "Wrong Heading");
+           Assert.assertEquals(actualHeading, "Wrong Heading");
             
             
         }
