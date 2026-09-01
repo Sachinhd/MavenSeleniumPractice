@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-01T09:41:50 IST" name="Maven Selenium Practice Suite" finished-at="2026-09-01T09:42:13 IST" duration-ms="23600">
+    <groups>
+      <group name="regression">
+        <method signature="LoginTest.verifyLoginWithMultipleData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.sachin.tests.LoginTest@201a4587]" name="verifyLoginWithMultipleData" class="com.sachin.tests.LoginTest"/>
+        <method signature="LoginTest.verifyLogout()[pri:0, instance:com.sachin.tests.LoginTest@201a4587]" name="verifyLogout" class="com.sachin.tests.LoginTest"/>
+      </group> <!-- regression -->
+    </groups>
+    <test started-at="2026-09-01T09:41:50 IST" name="Regression Tests" finished-at="2026-09-01T09:42:13 IST" duration-ms="23600">
+      <class name="com.sachin.tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sachin.tests.LoginTest@201a4587]" started-at="2026-09-01T09:41:51 IST" name="setUp" finished-at="2026-09-01T09:41:56 IST" duration-ms="5440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithMultipleData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.sachin.tests.LoginTest@201a4587]" started-at="2026-09-01T09:41:56 IST" name="verifyLoginWithMultipleData" data-provider="loginData" finished-at="2026-09-01T09:41:57 IST" duration-ms="840" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithMultipleData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sachin.tests.LoginTest@201a4587]" started-at="2026-09-01T09:41:57 IST" name="tearDown" finished-at="2026-09-01T09:41:58 IST" duration-ms="496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sachin.tests.LoginTest@201a4587]" started-at="2026-09-01T09:41:58 IST" name="setUp" finished-at="2026-09-01T09:42:00 IST" duration-ms="2518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithMultipleData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.sachin.tests.LoginTest@201a4587]" started-at="2026-09-01T09:42:00 IST" name="verifyLoginWithMultipleData" data-provider="loginData" finished-at="2026-09-01T09:42:01 IST" duration-ms="1262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrong_password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithMultipleData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sachin.tests.LoginTest@201a4587]" started-at="2026-09-01T09:42:01 IST" name="tearDown" finished-at="2026-09-01T09:42:02 IST" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sachin.tests.LoginTest@201a4587]" started-at="2026-09-01T09:42:02 IST" name="setUp" finished-at="2026-09-01T09:42:06 IST" duration-ms="3718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithMultipleData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.sachin.tests.LoginTest@201a4587]" started-at="2026-09-01T09:42:06 IST" name="verifyLoginWithMultipleData" data-provider="loginData" finished-at="2026-09-01T09:42:07 IST" duration-ms="1733" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrong_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithMultipleData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sachin.tests.LoginTest@201a4587]" started-at="2026-09-01T09:42:07 IST" name="tearDown" finished-at="2026-09-01T09:42:08 IST" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sachin.tests.LoginTest@201a4587]" started-at="2026-09-01T09:42:08 IST" name="setUp" finished-at="2026-09-01T09:42:11 IST" duration-ms="3447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLogout()[pri:0, instance:com.sachin.tests.LoginTest@201a4587]" started-at="2026-09-01T09:42:11 IST" name="verifyLogout" finished-at="2026-09-01T09:42:13 IST" duration-ms="1711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sachin.tests.LoginTest@201a4587]" started-at="2026-09-01T09:42:13 IST" name="tearDown" finished-at="2026-09-01T09:42:13 IST" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sachin.tests.LoginTest -->
+    </test> <!-- Regression Tests -->
+  </suite> <!-- Maven Selenium Practice Suite -->
+</testng-results>
