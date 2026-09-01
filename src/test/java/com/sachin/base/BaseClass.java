@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeMethod;
 
 import com.sachin.utilities.ConfigReader;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseClass {
 
     protected WebDriver driver;
@@ -16,8 +18,9 @@ public class BaseClass {
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
 
-    	//git test
-    // Load configuration
+        WebDriverManager.chromedriver().setup();
+
+        // Load configuration
         ConfigReader.loadProperties();
 
         // Read browser

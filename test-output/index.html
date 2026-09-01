@@ -103,12 +103,12 @@
                     <div class="method-list-content passed suite-Maven_Selenium_Practice_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Maven_Selenium_Practice_Suite" title="com.sachin.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithMultipleData(standard_user, secret_sauce, Valid)">verifyLoginWithMultipleData(standard_user, secret_sauce, Valid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Maven_Selenium_Practice_Suite" title="com.sachin.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithMultipleData(standard_user, wrong_password, Invalid)">verifyLoginWithMultipleData(standard_user, wrong_password, Invalid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Maven_Selenium_Practice_Suite" title="com.sachin.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithMultipleData(standard_user, wrong_password, Invalid)">verifyLoginWithMultipleData(standard_user, wrong_password, Invalid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Maven_Selenium_Practice_Suite" title="com.sachin.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithMultipleData(standard_user, secret_sauce, Valid)">verifyLoginWithMultipleData(standard_user, secret_sauce, Valid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -141,18 +141,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLoginWithMultipleData(standard_user, secret_sauce, Valid)">
-                  </a> <!-- verifyLoginWithMultipleData(standard_user, secret_sauce, Valid) -->
-                  <span class="method-name">verifyLoginWithMultipleData</span>
-                  <span class="parameters">(standard_user,secret_sauce,Valid)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyLoginWithMultipleData(standard_user, wrong_password, Invalid)">
                   </a> <!-- verifyLoginWithMultipleData(standard_user, wrong_password, Invalid) -->
                   <span class="method-name">verifyLoginWithMultipleData</span>
                   <span class="parameters">(standard_user,wrong_password,Invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithMultipleData(standard_user, secret_sauce, Valid)">
+                  </a> <!-- verifyLoginWithMultipleData(standard_user, secret_sauce, Valid) -->
+                  <span class="method-name">verifyLoginWithMultipleData</span>
+                  <span class="parameters">(standard_user,secret_sauce,Valid)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -182,6 +182,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Maven Selenium Practice Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.sachin.utilities.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Regression Tests&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
@@ -245,24 +248,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyLogout')
 data.setCell(0, 2, 'com.sachin.tests.LoginTest')
-data.setCell(0, 3, 3434);
+data.setCell(0, 3, 1701);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyLoginWithMultipleData')
 data.setCell(1, 2, 'com.sachin.tests.LoginTest')
-data.setCell(1, 3, 2291);
+data.setCell(1, 3, 1566);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyLoginWithMultipleData')
 data.setCell(2, 2, 'com.sachin.tests.LoginTest')
-data.setCell(2, 3, 1800);
+data.setCell(2, 3, 1470);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyLoginWithMultipleData')
 data.setCell(3, 2, 'com.sachin.tests.LoginTest')
-data.setCell(3, 3, 944);
+data.setCell(3, 3, 1004);
 window.suiteTableData['Maven_Selenium_Practice_Suite']= { tableData: data, tableDiv: 'times-div-Maven_Selenium_Practice_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Maven_Selenium_Practice_Suite">
               </div> <!-- times-div-Maven_Selenium_Practice_Suite -->
             </div> <!-- times-div -->
@@ -302,47 +305,47 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithMultipleData(standard_user, secret_sauce, Valid)</span>
-                <span class="method-start">11040 ms</span>
+                <span class="method-start">4697 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13338 ms</span>
+                <span class="method-start">5720 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">14112 ms</span>
+                <span class="method-start">6393 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithMultipleData(standard_user, wrong_password, Invalid)</span>
-                <span class="method-start">20073 ms</span>
+                <span class="method-start">8692 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21025 ms</span>
+                <span class="method-start">10267 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">21711 ms</span>
+                <span class="method-start">11015 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithMultipleData(wrong_user, secret_sauce, Invalid)</span>
-                <span class="method-start">25444 ms</span>
+                <span class="method-start">13267 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">27250 ms</span>
+                <span class="method-start">14749 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">27778 ms</span>
+                <span class="method-start">15223 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLogout</span>
-                <span class="method-start">30526 ms</span>
+                <span class="method-start">20994 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">33964 ms</span>
+                <span class="method-start">22701 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
