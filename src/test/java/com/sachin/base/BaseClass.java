@@ -20,7 +20,7 @@ public class BaseClass {
 
         WebDriverManager.chromedriver().setup();
 
-        // Load configuration
+        // Load configuration test
         ConfigReader.loadProperties();
 
         // Read browser
